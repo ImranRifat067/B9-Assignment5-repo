@@ -201,7 +201,8 @@
 
             <!-- seat section start -->
             <div class="bg-white p-8 flex gap-8    ">
-                <div class="space-y-6 border-r-2 border-dotted pr-8">
+                <!-- seat show -->
+                <div class="space-y-6 border-r-2 border-dotted pr-8 ">
                     <h2 class="text-2xl font-semibold border-b-2 border-dotted pb-4 ">Select Your Seat</h2>
                     <div class="flex border-b-2 border-dotted justify-between pb-4 ">
                         <div class="flex gap-2 ">
@@ -224,7 +225,58 @@
                         <button class="btn"><img src="images/wheel.svg" alt=""></button>
                     </div>
                     <!-- ............A start......... -->
-                    
+
+                    <div class="flex gap-16">
+                        <div class="flex gap-8 items-center">
+                            <p>A</p>
+                            <div class="flex gap-8">
+                                <button class="btn">A1</button>
+                                <button class="btn">A2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8">
+                            <button class="btn">A3</button>
+                            <button class="btn">A4</button>
+                        </div>
+                    </div>
+
+                    <!-- ............A ends......... -->
+                    <!-- ............A start......... -->
+
+                    <div class="flex gap-16">
+                        <div class="flex gap-8 items-center">
+                            <p>A</p>
+                            <div class="flex gap-8">
+                                <button class="btn">A1</button>
+                                <button class="btn">A2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8">
+                            <button class="btn">A3</button>
+                            <button class="btn">A4</button>
+                        </div>
+                    </div>
+
+                    <!-- ............A ends......... -->
+                    <!-- ............A start......... -->
+
+                    <div class="flex gap-16">
+                        <div class="flex gap-8 items-center">
+                            <p>A</p>
+                            <div class="flex gap-8">
+                                <button class="btn">A1</button>
+                                <button class="btn">A2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8">
+                            <button class="btn">A3</button>
+                            <button class="btn">A4</button>
+                        </div>
+                    </div>
+
+                    <!-- ............A ends......... -->
+                    <!-- ............A start......... -->
+
                     <div class="flex gap-16">
                         <div class="flex gap-8 items-center">
                             <p>A</p>
@@ -241,67 +293,104 @@
 
                     <!-- ............A ends......... -->
                 </div>
+
                 <!-- calculation section start -->
                 <div>
                     <h2 class="text-2xl font-semibold border-b-2 border-dotted pb-4 ">Select Your Seat</h2>
-                    <!-- selected seat start -->
-                    <div class="flex gap-32 border-b-2 border-dotted">
-                        <!--main seat -->
-                        <div>
-                            <h3 class="font-bold text-xl">Seat <span class="bg-[#1DD100] px-1 rounded-full text-sm font-normal">2</span> </h3>
+                    <div class="bg-[#F7F8F8] p-8 rounded-xl mt-8">
+                        <!-- selected seat start -->
+                        <div class="flex gap-32 border-b-2 border-dotted">
+                            <!--main seat -->
+                            <div>
+                                <h3 class="font-bold text-xl">Seat <span
+                                        class="bg-[#1DD100] px-1 rounded-full text-sm font-normal">2</span> </h3>
+                            </div>
+                            <!--main class -->
+                            <div>
+                                <h3 class="font-bold text-xl">Class</h3>
+
+                            </div>
+
+                            <!--main price -->
+                            <div>
+                                <h3 class="font-bold text-xl">Price</h3>
+                            </div>
                         </div>
-                        <!--main class -->
-                        <div>
-                            <h3 class="font-bold text-xl">Class</h3>
-                            
+                        <div class="flex gap-32 py-1">
+                            <!-- appended seat -->
+                            <div id="appended-seat">
+                                <p>C2</p>
+
+                            </div>
+                            <!--appended class -->
+                            <div id="appended-class" class="ml-10">
+                                <p>economy</p>
+
+
+                            </div>
+
+                            <!--appended price -->
+                            <div id="appended-price" class="mr-4">
+                                <p> 550</p>
+
+                            </div>
                         </div>
-                        
-                        <!--main price -->
-                        <div>
-                            <h3 class="font-bold text-xl">Price</h3>
+                        <hr>
+                        <!-- selected seat ends -->
+
+                        <!-- total price start -->
+                        <div class="flex justify-between font-medium pt-2">
+                            <h3>Total Price</h3>
+                            <div>
+                                <p>BDT <span>1100</span></p>
+                                <!-- discount part -->
+                                <div id="discount" class="ml-7 text-red-500">
+                                    100
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex gap-32 py-1">
-                        <!-- appended seat -->
-                        <div id="appended-seat">
-                            <p>C2</p>
-                            
+                        <!-- total price ends -->
+
+                        <!-- apply coupon -->
+                        <div class=" bg-white flex p-1 rounded-xl">
+                            <input class=" flex-1 pl-2" type="text" placeholder="Have any copupon?">
+                            <button class="btn bg-[#1DD100] border-none">Apply</button>
                         </div>
-                        <!--appended class -->
-                        <div id="appended-class"  class="ml-10">
-                            <p>economy</p>
-                           
-                            
-                        </div>
-                        
-                        <!--appended price -->
-                        <div id="appended-price"   class="mr-4">
-                           <p> 550</p>
-                           
-                        </div>
-                    </div>
-                    <hr>
-                    <!-- selected seat ends -->
-                    <div class="flex justify-between font-medium pt-2">
-                        <h3 >Total Price</h3>
-                        <div>
+
+                        <!--grand total price start -->
+                        <div class="flex justify-between font-medium pt-2">
+                            <h3>Grand total</h3>
                             <p>BDT <span>1100</span></p>
-                            <!-- discount part -->
-                            <div id="discount" class="ml-7 text-red-500">
-                                 100 
-                            </div>    
                         </div>
+                        <!--grand total price ends -->
                     </div>
-                    <!-- apply coupon -->
-                    <div class="bg-[#F7F8F8] flex p-1 rounded-xl">
-                        <input class="bg-[#F7F8F8] flex-1 pl-2" type="text" placeholder="Have any copupon?">
-                        <button class="btn bg-[#1DD100] border-none">Apply</button>
-                    </div>
+
+                    <!-- input field -->
+                    <form class="mt-4 space-y-6">
+                    <!-- <div class="mt-2"> -->
+                        <!-- input 1 -->
+                        <div class="space-y-3">
+                            <h2 class="font-semibold text-[#030712]">Passenger Name*</h2>
+                            <input class="border-2 rounded-xl  w-full py-3 pl-4" type="text" placeholder="Enter your name">
+                        </div>
+                        <!-- input 2 -->
+                        <div class="space-y-3">
+                            <h2 class="font-semibold text-[#030712]">Phone Number*</h2>
+                            <input class="border-2 rounded-xl  w-full py-3 pl-4" type="number" placeholder="Enter your phone number" required>
+                        </div>
+                        <!-- input 3 -->
+                        <div class="space-y-3">
+                            <h2 class="font-semibold text-[#030712]">Email ID</h2>
+                            <input class="border-2 rounded-xl  w-full py-3 pl-4" type="mail" placeholder="Enter your email id">
+                        </div>
+                        
+                    <!-- </div> -->
+                </form>
                 </div>
                 <!-- calculation section ends -->
-                
             </div>
             <!-- seat section ends -->
+
         </section>
         <!-- book ticket section ends -->
     </main>
