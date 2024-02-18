@@ -10,9 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="container mx-auto max-w-[1440px]">
+<body class=" ">
     <!-- header section start here -->
-    <header class="header ">
+    <header class="header container mx-auto  max-w-[1440px]">
         <!-- nav section start here -->
         <nav>
             <div class="navbar bg-base-100 lg:py-10">
@@ -106,7 +106,8 @@
     <!-- main section start here -->
     <main>
         <!-- coupon section start -->
-        <section class=" lg:mt-20 flex flex-col space-y-10 items-center py-10 lg:py-24">
+        <section
+            class=" lg:mt-20 flex flex-col space-y-10 items-center py-10 lg:py-24 container mx-auto  max-w-[1440px]">
             <h3 class="text-4xl font-bold">Best offers for you</h3>
             <div class="flex flex-col lg:flex-row gap-8">
                 <!-- coupe-1 -->
@@ -142,24 +143,91 @@
             </div>
             <button class="btn bg-transparent border-[#1DD100] text-xl text-[#1DD100] font-bold">See All Offers</button>
         </section>
-          <!-- coupon section ends -->
+        <!-- coupon section ends -->
 
-          <!-- book ticket section start --> 
-        <section>
-             <h3 class="text-4xl font-bold">P.H Paribahan </h3>
-             <p class="text-lg opacity-50">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-             <!-- about div -->
-             <div>
-                <div>
+        <!-- book ticket section start -->
+        <section
+            class="bg-[#F7F8F8] flex flex-col items-center space-y-8 pt-24 border-t-4 border-[#1DD100] rounded-tl-[88px] rounded-tr-[88px]">
+            <h3 class="text-4xl font-bold">P.H Paribahan </h3>
+            <p class="text-lg opacity-50 max-w-3xl text-center">Yes, you can run unit tests and view the results
+                directly within the app. The
+                integrated testing features allow for a streamlined .</p>
+            <div class="flex bg-white p-10 container mx-auto  max-w-[1440px] rounded-3xl ">
+                <!-- about div -->
+                <div class=" mr-10 text-lg flex-1">
+                    <div class="flex justify-between">
+                        <div class="flex gap-2 items-center">
+                            <div>
+                                <img src="images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-3xl font-bold">Greenline Paribahan</h2>
+                                <p class="text-lg opacity-60">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <button class="btn bg-[#1DD1001A]"><img src="images/seat-green.png" alt=""> 40 Seats
+                            left</button>
+                    </div>
+                    <div class="p-10 mt-10 bg-[#F7F8F8] space-y-5 rounded-3xl">
+                        <div class="flex justify-between border-b-2 border-dashed pb-5">
+                            <p>Route</p>
+                            <p>Dhaka-Shylet</p>
+                        </div>
+
+                        <div class="flex justify-between border-b-2 border-dashed pb-5">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <div class="flex gap-8">
+                            <p class="btn">Boarding Point - Laxmipur</p>
+                            <p class="btn">Dropping Point - Bogura</p>
+                            <p class="btn">Est. Time - 11 Hour</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="w-28">
+                    <img class="w-full" src="images/info-devider.png" alt="">
+                </div> -->
+
+                <div class="px-20 flex flex-col items-center justify-center">
+                    <div>
+                        <img src="images/fare.png" alt="">
+                    </div>
+                    <h2 class="text-3xl font-bold mt-8">550 Taka</h2>
+                    <p class="font-semibold text-2xl opacity-60 ">Per Seat</p>
+                </div>
+            </div>
+
+            <!-- seat section start -->
+            <div>
+                <h2 class="text-2xl font-semibold border-b-2 border-dotted ">Select Your Seat</h2>
+                <div class="flex border-b-2 border-dotted ">
+                    <div class="flex gap-2 "> 
+                        <div >
+                            <img src="images/seat-gray.png" alt="">
+                        </div>
+
+                        <p> Available</p>
+                    </div>
+                   
+                    <div class="flex gap-2"> 
+                        <div >
+                            <img src="images/seat-green-filled.png" alt="">
+                        </div>
+
+                        <p>Selected</p>
+                    </div>
+                   
 
                 </div>
                 <div>
-                     
+                    
                 </div>
-             </div>
-             <div></div>
+            </div>
+            <!-- seat section ends -->
         </section>
-         <!-- book ticket section ends -->
+        <!-- book ticket section ends -->
     </main>
     <!-- main section ends here -->
 
