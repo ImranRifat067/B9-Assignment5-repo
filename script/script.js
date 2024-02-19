@@ -1,17 +1,20 @@
-count = 0 ;
+let count = 0 ;
 const allBtn = document.getElementsByClassName('ticket-btn');
 
 for(const btn of allBtn){
 
    btn.addEventListener('click',function(event){
+    
+    
 
     if(count==4){
         alert('you can book only 4');
         event.preventDefault();
-        return;
+        return ;
     }
-
-    count = count+1;
+    count=count+1;
+   
+    
     // add background color
     event.target.setAttribute("disabled", true);
     event.target.style.background ="#1DD100";
@@ -41,19 +44,62 @@ for(const btn of allBtn){
     const selectedSeatNumberText = parseInt (selectedSeatNumber.innerText);
     const updatedSeat = selectedSeatNumberText + 1;
     document.getElementById('selected-seat').innerText = updatedSeat;
+    
     // total prise
     const perTicketPrize = document.getElementById('per-ticket-prize');
     const perTicketPrizeElement = parseInt(perTicketPrize.innerText);
     const totalPrize = updatedSeat * perTicketPrizeElement;
-    console.log(totalPrize); 
-    document.getElementById('total-prise').innerText = totalPrize;
-    document.getElementById('grand-total').innerText = totalPrize;
-    // const updatedTotalPrise = document.getElementById('total-prise');
-    // const updatedTotalPriseElement = parseInt(updatedTotalPrise.innerText);
-    // updatedTotalPriseElement.innerText = totalPrize;
-    // console.log(updatedTotalPriseElement);
 
+    
+    // console.log(totalPrize); 
+    document.getElementById('total-prise').innerText = totalPrize;
+    // grand total
+    document.getElementById('grand-total').innerText = totalPrize;
+    
+
+   if(updatedSeat === 4){
+     const couponinput = document.getElementById('coupon');
+     couponinput.disabled = false;
+     document.getElementById('apply').addEventListener('click',function(){
+        const coupon = document.getElementById('coupon').value;
+        
+        if(updatedSeat === 4 ){
+            if(coupon === 'NEW15'){
+                const discount = totalPrize*0.15;
+                document.getElementById('discount').innerText = '-' + discount
+                const newGrandTotal = totalPrize - discount ;
+                document.getElementById('grand-total').innerText =  newGrandTotal;
+            }
+        
+        }
+        else {
+            console.log('good');
+        }
+    })
+   }
+     
+    
+    
    })
+  
 
 }
+// console.log(count);
+//  coupon added
+//  const newGrandTotalPrise = document.getElementById('grand-total')
+// const newGrandTotalPriseElement = parseInt(newGrandTotalPrise.innerText);
+// console.log(newGrandTotalPriseElement);
+// document.getElementById('apply').addEventListener('click',function(){
+//     const coupon = document.getElementById('coupon').value;
+//     console.log(typeof coupon);
+//     if(updatedSeat === 4 ){
+//         if(coupon === 'NEW15'){
+//             console.log('good');
+//         }
+    
+//     }
+//     else {
+//         console.log('good');
+//     }
+// })
 
