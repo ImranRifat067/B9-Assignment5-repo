@@ -12,7 +12,7 @@
 
 <body>
     <!-- header section start here -->
-    <header class="header container mx-auto  max-w-[1440px]">
+    <header id="header" class="header container mx-auto  max-w-[1440px]">
         <!-- nav section start here -->
         <nav>
             <div class="navbar bg-base-100 lg:py-10">
@@ -106,7 +106,7 @@
     <!-- header section ends here -->
 
     <!-- main section start here -->
-    <main >
+    <main id="main" >
         <!-- coupon section start -->
         <section
             class=" lg:mt-20 flex flex-col space-y-10 items-center py-10 lg:py-24 container mx-auto  max-w-[1440px]">
@@ -480,7 +480,7 @@
                     </div>
 
                     <!-- input field -->
-                    <form class="mt-4 space-y-6">
+                    <div class="mt-4 space-y-6">
                         <!-- <div class="mt-2"> -->
                         <!-- input 1 -->
                         <div class="space-y-3">
@@ -490,9 +490,9 @@
                         </div>
                         <!-- input 2 -->
                         <div class="space-y-3">
-                            <h2 class="font-semibold text-[#030712]">Phone Number*</h2>
-                            <input class="border-2 rounded-xl  w-full py-3 pl-4" type="number"
-                                placeholder="Enter your phone number" required>
+                            <h2  class="font-semibold text-[#030712]">Phone Number*</h2>
+                            <input id="number" class="border-2 rounded-xl  w-full py-3 pl-4" type="number"
+                                placeholder="Enter your phone number">
                         </div>
                         <!-- input 3 -->
                         <div class="space-y-3">
@@ -502,11 +502,10 @@
                         </div>
 
                         <div class="flex py-6">
-                            <input class="btn bg-[#1DD100] border-none flex-1 text-white text-xl font-bold "
-                                type="submit" value="Next">
+                            <button id="next" class="btn bg-[#1DD100] border-none flex-1 text-white text-xl font-bold">Next</button>
                         </div>
                         <!-- </div> -->
-                    </form>
+                    </div>
                     <div class="flex justify-around">
                         <a class="link">Terms and Conditions</a>
                         <a class="link">Cancellation Policy</a>
@@ -523,7 +522,7 @@
 
     <!-- footer section start here -->
 
-    <footer class=" p-24 bg-black text-white ">
+    <footer id="footer" class=" p-24 bg-black text-white ">
         <div class="flex flex-col container mx-auto   gap-10">
             <div class="flex items-center justify-between">
                 <div class="space-y-4">
@@ -558,7 +557,7 @@
     <!-- footer section ends here -->
 
     <!-- popping section start -->
-    <section class="bg-gray-300 h-[100vh] flex items-center justify-center text-center hidden">
+    <section id="popping" class="bg-gray-300 h-[100vh] flex items-center justify-center text-center hidden">
        <div class="bg-white max-w-screen-md rounded-xl flex flex-col items-center space-y-4 p-16">
         <div>
             <div><img src="images/success.png" alt=""></div>

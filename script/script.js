@@ -36,7 +36,7 @@ for(const btn of allBtn){
     appendedClass.appendChild(p1);
     const appendedPrice = document.getElementById('appended-price');
     const p2 = document.createElement('p');
-    p2.innerText = '500';
+    p2.innerText = '550';
     appendedPrice.appendChild(p2);
     
     // add selected seat
@@ -56,14 +56,13 @@ for(const btn of allBtn){
     // grand total
     document.getElementById('grand-total').innerText = totalPrize;
     
-
    if(updatedSeat === 4){
      const couponinput = document.getElementById('coupon');
      couponinput.disabled = false;
      document.getElementById('apply').addEventListener('click',function(){
         const coupon = document.getElementById('coupon').value;
         
-        if(updatedSeat === 4 ){
+        // if(updatedSeat === 4 ){
             if(coupon === 'NEW15'){
                 const discount = totalPrize*0.15;
                 document.getElementById('discount').innerText = '-' + discount
@@ -87,16 +86,36 @@ for(const btn of allBtn){
                 = '';
             }
 
-        } 
+        // } 
 
     })
 
+
+   }
+   else{
+    document.getElementById('next').addEventListener('click',function(){
+        const userNumber = document.getElementById('number').value;
+        
+        if(userNumber.length !== 0 ){
+            hideElement('header');
+            hideElement('main');
+            hideElement('footer');
+            showElement('popping');
+        }
+        else{
+            alert('enter phone number');
+        }
+    })
    }
 
    })
-   
+
 }
+
 
 function hideElement(elementId){
     document.getElementById(elementId).classList.add('hidden');
+}
+function showElement(elementId){
+    document.getElementById(elementId).classList.remove('hidden');
 }
