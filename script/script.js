@@ -4,6 +4,13 @@ const allBtn = document.getElementsByClassName('ticket-btn');
 for(const btn of allBtn){
 
    btn.addEventListener('click',function(event){
+
+    if(count==4){
+        alert('you can book only 4');
+        event.preventDefault();
+        return;
+    }
+
     count = count+1;
     // add background color
     event.target.setAttribute("disabled", true);
@@ -14,10 +21,7 @@ for(const btn of allBtn){
     const remainSeat = seatsLeftText - 1;
     document.getElementById('seats-left').innerText = remainSeat;
 
-    if(count>4){
-        alert('you can book only 4');
-        
-    }
+    
     // append seats
     const appendedSeat = document.getElementById('appended-seat');
     const p = document.createElement('p');
