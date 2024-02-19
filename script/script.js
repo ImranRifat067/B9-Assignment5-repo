@@ -69,37 +69,34 @@ for(const btn of allBtn){
                 document.getElementById('discount').innerText = '-' + discount
                 const newGrandTotal = totalPrize - discount ;
                 document.getElementById('grand-total').innerText =  newGrandTotal;
+                hideElement('coupon-div');
+
             }
-        
-        }
-        else {
-            console.log('good');
-        }
+            else if(coupon === 'Couple 20'){
+                const discount = totalPrize*0.20;
+                document.getElementById('discount').innerText = '-' + discount
+                const newGrandTotal = totalPrize - discount ;
+                document.getElementById('grand-total').innerText =  newGrandTotal;
+                
+                hideElement('coupon-div');
+
+            }
+            else {
+                alert('invalid coupon code');
+                document.getElementById('coupon').value
+                = '';
+            }
+
+        } 
+
     })
+
    }
-     
-    
-    
+
    })
-  
-
+   
 }
-// console.log(count);
-//  coupon added
-//  const newGrandTotalPrise = document.getElementById('grand-total')
-// const newGrandTotalPriseElement = parseInt(newGrandTotalPrise.innerText);
-// console.log(newGrandTotalPriseElement);
-// document.getElementById('apply').addEventListener('click',function(){
-//     const coupon = document.getElementById('coupon').value;
-//     console.log(typeof coupon);
-//     if(updatedSeat === 4 ){
-//         if(coupon === 'NEW15'){
-//             console.log('good');
-//         }
-    
-//     }
-//     else {
-//         console.log('good');
-//     }
-// })
 
+function hideElement(elementId){
+    document.getElementById(elementId).classList.add('hidden');
+}
