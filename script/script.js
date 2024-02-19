@@ -36,16 +36,22 @@ for(const btn of allBtn){
     p2.innerText = '500';
     appendedPrice.appendChild(p2);
     
-    // appendChild('appended-class');
     // add selected seat
     const selectedSeatNumber = document.getElementById('selected-seat');
     const selectedSeatNumberText = parseInt (selectedSeatNumber.innerText);
     const updatedSeat = selectedSeatNumberText + 1;
     document.getElementById('selected-seat').innerText = updatedSeat;
-
-    console.log(selectedSeatNumberText);
-    console.log(event.target.innerText);
-    const innerElement = event.target
+    // total prise
+    const perTicketPrize = document.getElementById('per-ticket-prize');
+    const perTicketPrizeElement = parseInt(perTicketPrize.innerText);
+    const totalPrize = updatedSeat * perTicketPrizeElement;
+    console.log(totalPrize); 
+    document.getElementById('total-prise').innerText = totalPrize;
+    document.getElementById('grand-total').innerText = totalPrize;
+    // const updatedTotalPrise = document.getElementById('total-prise');
+    // const updatedTotalPriseElement = parseInt(updatedTotalPrise.innerText);
+    // updatedTotalPriseElement.innerText = totalPrize;
+    // console.log(updatedTotalPriseElement);
 
    })
 
