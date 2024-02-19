@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class=" ">
+<body>
     <!-- header section start here -->
     <header class="header container mx-auto  max-w-[1440px]">
         <!-- nav section start here -->
@@ -62,7 +62,8 @@
                         view
                         the results directly within the app. The integrated testing features allow for a streamlined .
                     </p>
-                    <button class="btn bg-[#1DD100] border-none font-bold">Buy Tickets</button>
+                    <a href="#buy-ticket"><button class="btn bg-[#1DD100] border-none font-bold">Buy Tickets</button></a>
+                    
                 </div>
 
             </section>
@@ -147,7 +148,7 @@
         <!-- coupon section ends -->
 
         <!-- book ticket section start -->
-        <section
+        <section id="buy-ticket"
             class="bg-[#F7F8F8] flex flex-col items-center space-y-8 pt-24 border-t-4 border-[#1DD100] rounded-tl-[88px] rounded-tr-[88px] pb-28">
             <h3 class="text-4xl font-bold">P.H Paribahan </h3>
             <p class="text-lg opacity-50 max-w-3xl text-center">Yes, you can run unit tests and view the results
@@ -166,7 +167,7 @@
                                 <p class="text-lg opacity-60">Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
-                        <button class="btn bg-[#1DD1001A]"><img src="images/seat-green.png" alt=""> 40 Seats
+                        <button class="btn bg-[#1DD1001A]"><img src="images/seat-green.png" alt=""> <span id="seats-left">40</span>Seats
                             left</button>
                     </div>
                     <div class="p-10 mt-10 bg-[#F7F8F8] space-y-5 rounded-3xl">
@@ -231,13 +232,13 @@
                         <div class="flex gap-8 items-center">
                             <p>A</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">A1</button>
-                                <button class="btn w-[110px]">A2</button>
+                                <button id="A1" class="btn w-[110px] ticket-btn">A1</button>
+                                <button id="A2" class="btn w-[110px] ticket-btn">A2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">A3</button>
-                            <button class="btn w-[110px]">A4</button>
+                            <button id="A3" class="btn w-[110px] ticket-btn">A3</button>
+                            <button id="A4" class="btn w-[110px] ticket-btn">A4</button>
                         </div>
                     </div>
 
@@ -248,13 +249,13 @@
                         <div class="flex gap-8 items-center">
                             <p>B</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">B1</button>
-                                <button class="btn w-[110px]">B2</button>
+                                <button id="B1" class="btn w-[110px] ticket-btn">B1</button>
+                                <button id="B2" class="btn w-[110px] ticket-btn">B2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">B3</button>
-                            <button class="btn w-[110px]">B4</button>
+                            <button id="B3" class="btn w-[110px] ticket-btn">B3</button>
+                            <button id="B4" class="btn w-[110px] ticket-btn">B4</button>
                         </div>
                     </div>
 
@@ -265,13 +266,13 @@
                         <div class="flex gap-8 items-center">
                             <p>C</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">C1</button>
-                                <button class="btn w-[110px]">C2</button>
+                                <button id="C1" class="btn w-[110px] ticket-btn">C1</button>
+                                <button id="C2" class="btn w-[110px] ticket-btn">C2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">C3</button>
-                            <button class="btn w-[110px]">C4</button>
+                            <button id="C3" class="btn w-[110px] ticket-btn">C3</button>
+                            <button id="C4" class="btn w-[110px] ticket-btn">C4</button>
                         </div>
                     </div>
 
@@ -282,13 +283,13 @@
                         <div class="flex gap-8 items-center">
                             <p>D</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">D1</button>
-                                <button class="btn w-[110px]">D2</button>
+                                <button id="D1" class="btn w-[110px] ticket-btn">D1</button>
+                                <button id="D2" class="btn w-[110px] ticket-btn">D2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">D3</button>
-                            <button class="btn w-[110px]">D4</button>
+                            <button id="D3" class="btn w-[110px] ticket-btn">D3</button>
+                            <button id="D4" class="btn w-[110px] ticket-btn">D4</button>
                         </div>
                     </div>
 
@@ -299,13 +300,13 @@
                         <div class="flex gap-8 items-center">
                             <p>E</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">E 1</button>
-                                <button class="btn w-[110px]">E 2</button>
+                                <button id="E1" class="btn w-[110px] ticket-btn">E1</button>
+                                <button id="E2" class="btn w-[110px] ticket-btn">E2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">E 3</button>
-                            <button class="btn w-[110px]">E 4</button>
+                            <button id="E3" class="btn w-[110px] ticket-btn">E3</button>
+                            <button id="E4" class="btn w-[110px] ticket-btn">E4</button>
                         </div>
                     </div>
 
@@ -316,13 +317,13 @@
                         <div class="flex gap-8 items-center">
                             <p>F</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">F 1</button>
-                                <button class="btn w-[110px]">F 2</button>
+                                <button id="F1" class="btn w-[110px] ticket-btn">F1</button>
+                                <button id="F2" class="btn w-[110px] ticket-btn">F2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">F 3</button>
-                            <button class="btn w-[110px]">F 4</button>
+                            <button id="F3" class="btn w-[110px] ticket-btn">F3</button>
+                            <button id="F4" class="btn w-[110px] ticket-btn">F4</button>
                         </div>
                     </div>
 
@@ -333,13 +334,13 @@
                         <div class="flex gap-8 items-center">
                             <p>G</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">G1</button>
-                                <button class="btn w-[110px]">G2</button>
+                                <button id="G1" class="btn w-[110px] ticket-btn">G1</button>
+                                <button id="G2" class="btn w-[110px] ticket-btn">G2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">G3</button>
-                            <button class="btn w-[110px]">G4</button>
+                            <button id="G3" class="btn w-[110px] ticket-btn">G3</button>
+                            <button id="G4" class="btn w-[110px] ticket-btn">G4</button>
                         </div>
                     </div>
 
@@ -350,13 +351,13 @@
                         <div class="flex gap-8 items-center">
                             <p>H</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">H1</button>
-                                <button class="btn w-[110px]">H2</button>
+                                <button id="H1" class="btn w-[110px] ticket-btn">H1</button>
+                                <button id="H2" class="btn w-[110px] ticket-btn">H2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">H3</button>
-                            <button class="btn w-[110px]">H4</button>
+                            <button id="H3" class="btn w-[110px] ticket-btn">H3</button>
+                            <button id="H4" class="btn w-[110px] ticket-btn">H4</button>
                         </div>
                     </div>
 
@@ -367,13 +368,13 @@
                         <div class="flex gap-10 items-center">
                             <p>I</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">I 1</button>
-                                <button class="btn w-[110px]">I 2</button>
+                                <button id="I1" class="btn w-[110px] ticket-btn">I1</button>
+                                <button id="I2" class="btn w-[110px] ticket-btn">I2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">I 3</button>
-                            <button class="btn w-[110px]">I 4</button>
+                            <button id="I3" class="btn w-[110px] ticket-btn">I3</button>
+                            <button id="I4" class="btn w-[110px] ticket-btn">I4</button>
                         </div>
                     </div>
 
@@ -384,13 +385,13 @@
                         <div class="flex gap-10 items-center">
                             <p>J</p>
                             <div class="flex gap-10">
-                                <button class="btn w-[110px]">J 1</button>
-                                <button class="btn w-[110px]">J 2</button>
+                                <button id="J1" class="btn w-[110px] ticket-btn">J1</button>
+                                <button id="J2" class="btn w-[110px] ticket-btn">J2</button>
                             </div>
                         </div>
                         <div class="flex gap-10">
-                            <button class="btn w-[110px]">J 3</button>
-                            <button class="btn w-[110px]">J 4</button>
+                            <button id="J3" class="btn w-[110px] ticket-btn">J3</button>
+                            <button id="J4" class="btn w-[110px] ticket-btn">J4</button>
                         </div>
                     </div>
 
@@ -408,8 +409,8 @@
                         <div class="flex gap-32 border-b-2 border-dotted">
                             <!--main seat -->
                             <div>
-                                <h3 class="font-bold text-xl">Seat <span
-                                        class="bg-[#1DD100] px-1 rounded-full text-sm font-normal">2</span> </h3>
+                                <h3 class="font-bold text-xl">Seat<span id="selected-seat"
+                                        class="bg-[#1DD100] px-1 rounded-full text-sm font-normal text-white ml-1">0</span> </h3>
                             </div>
                             <!--main class -->
                             <div>
@@ -425,19 +426,26 @@
                         <div class="flex gap-32 py-1">
                             <!-- appended seat -->
                             <div id="appended-seat">
-                                <p>C2</p>
+                                <p>
+                                    <!-- C2 -->
+                                </p>
 
                             </div>
                             <!--appended class -->
                             <div id="appended-class" class="ml-10">
-                                <p>economy</p>
+                                <p> 
+                                    <!-- economy -->
+                                </p>
 
 
                             </div>
 
                             <!--appended price -->
                             <div id="appended-price" class="mr-4">
-                                <p> 550</p>
+                                <p> 
+                                    <!-- 550 -->
+
+                                </p>
 
                             </div>
                         </div>
@@ -563,6 +571,8 @@
        </div>
     </section>
     <!-- popping section ends -->
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>
